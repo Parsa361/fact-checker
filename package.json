@@ -1,0 +1,26 @@
+{
+  "name": "fact-check-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.3",
+    "dotenv": "^17.4.2",
+    "grammy": "^1.45.1",
+    "https-proxy-agent": "^9.1.0",
+    "node-fetch": "^2.7.0",
+    "p-queue": "^9.3.3",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/node-fetch": "^2.6.13",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}

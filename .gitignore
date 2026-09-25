@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.log
+
+# هر واریانت .env (مثل .env.local یا .env.bak) — جز نمونه‌ی بدون کلید
+.env.*
+!.env.example

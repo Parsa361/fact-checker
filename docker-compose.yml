@@ -1,0 +1,12 @@
+services:
+  bot:
+    build: .
+    container_name: fact-check-bot
+    restart: unless-stopped
+    # پیش‌فرض داکر ۱۰ ثانیه است که از یک بررسی جمنای کوتاه‌تر است؛ بدون این،
+    # خاموش شدن تمیز عملاً هیچ کاری نمی‌کند و کارها با kill قطع می‌شوند.
+    stop_grace_period: 90s
+    env_file:
+      - .env
+    ports:
+      - "${PORT:-3000}:3000"
